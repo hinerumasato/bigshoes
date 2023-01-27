@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/fragments :: include"></head>
+<head>
+    <title>Đăng nhập</title>
+</head>
+
+<body>
+    <header th:replace="layout/fragments :: header"></header>
+    <div class="grid dang_nhap">
+        <div class="dang_nhap_center">
+            <div class="dang_nhap_lefp">
+                <h1 class="dang_nhap_tai_khoan font">ĐĂNG NHẬP TÀI KHOẢN</h1>
+
+                <h4 class="email size">Email:</h4>
+
+                <input class="input_font email-input" type="email" placeholder="Email" />
+
+                <h4 class="mat_khau size">Mật Khẩu</h4>
+
+                <input class="input_font password" type="password" placeholder="Mật Khẩu" />
+
+                <div class="line">
+                    <button class="button login-btn">
+                        <i class="fa-solid fa-lock-open"></i> ĐĂNG NHẬP
+                    </button>
+
+                    <a class="quen_mat_khau" href="">Quên mật khẩu?</a>
+                </div>
+            </div>
+
+            <div class="dang_nhap_right">
+                <h1 class="tao_tai_khoan_moi font">TẠO TÀI KHOẢN MỚI</h1>
+
+                <p class="chu_thich">
+                    Đăng ký tài khoản ngay để có thể mua hàng nhanh chóng và dễ dàng hơn
+                    ! Ngoài ra <br class="down" />
+                    còn có rất nhiều chính sách và ưu đãi cho các thành viên
+                </p>
+
+                <a href="/signup">
+                    <button class="button">
+                        <i class="fa-solid fa-user"></i>Tạo tài khoản
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer th:replace="layout/fragments :: footer"></footer>
+</body>
+
+</html>

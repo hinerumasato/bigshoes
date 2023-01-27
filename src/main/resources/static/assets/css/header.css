@@ -1,0 +1,142 @@
+header {
+    background-color: var(--white-color);
+}
+
+.header_wrap {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.header_mid_small-navigation_list {
+    display: flex;
+}
+
+.header_mid_small-navigation_item {
+    margin: 0 4px;
+}
+
+.header_mid_small-navigation_item:hover a {
+    color: var(--menu-color);
+}
+
+.header_mid_small-navigation_link {
+    transition: all .3s;
+    color: var(--small-text-color);
+}
+
+.header_mid_search {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.header_mid_search_input {
+    height: 100%;
+    line-height: 48px;
+    width: 80%;
+    padding: 0 15px;
+    border: var(--menu-color) solid 1px;
+    outline: none !important;
+}
+
+.header_mid_search_input:focus {
+    border: var(--menu-color) solid 1px;
+}
+
+.header_mid_search_btn {
+    height: 100%;
+    color: var(--white-color);
+    background-color: var(--menu-color);
+    border: var(--menu-color) solid 1px;
+    padding: 0 15px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+}
+
+.header_mid_search_btn::before {
+    position: absolute;
+    content: "";
+    border-right: var(--menu-color) solid 24px;
+    border-bottom: transparent solid 24px;
+    border-left: transparent solid 24px;
+    border-top: transparent solid 24px;
+    top: 0;
+    left: -58%;
+}
+
+.header_right {
+    display: flex;
+}
+
+.header_right_link span a {
+    color: var(--small-text-color);
+    text-decoration: none;
+    font-size: 14px;
+    transition: all .3s;
+}
+
+.header_right_link span a:hover {
+    color: var(--menu-color);
+}
+
+.header_right_icon {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+
+.header_right_cart {
+    margin-left: 12px;
+}
+
+.header_nav {
+    position: relative;
+    height: var(--nav-height);
+    background-color: var(--menu-color);
+}
+
+.header_nav::before {
+    position: absolute;
+    content: "";
+    height: 92% !important;
+    top: 1px;
+    left: 3px;
+    right: 3px;
+    height: var(--nav-height);
+    border: var(--white-color) thin dashed;
+}
+
+.header_nav_list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header_nav_item {
+    border-left: solid 1px var(--nav-border-color);
+    height: 100%;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: all .3s;
+    z-index: 999;
+}
+
+.header_nav_item:first-child {
+    border: none;
+}
+
+.header_nav_item:hover {
+    background-color: var(--menu-hover-color);
+}
+
+.header_nav_link {
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    height: 100%;
+}

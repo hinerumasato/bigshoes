@@ -1,0 +1,221 @@
+<head th:fragment="include">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" th:href="@{/assets/css/grid.css}">
+    <link rel="stylesheet" th:href="@{/assets/icon/fontawesome-free-6.2.0-web/css/all.css}">
+    <link rel="stylesheet" th:href="@{/assets/css/base.css}">
+    <link rel="stylesheet" th:href="@{/assets/css/header.css}">
+    <link rel="stylesheet" th:href="@{/assets/css/footer.css}">
+    <link rel="stylesheet" th:href="@{/assets/css/index.css}">
+    <link rel="stylesheet" th:href="@{/assets/css/menu.css}">
+    <link rel="stylesheet" th:href="@{/assets/css/menu-category.css}">
+    <link rel="stylesheet" th:href="@{/assets/css/menu-online-support.css}">
+    <link rel="stylesheet" th:href="@{/assets/css/about.css}">
+    <link rel="stylesheet" th:href="@{/assets/css/login.css}">
+</head>
+
+<header class="header" th:fragment="header">
+    <div class="header_wrap grid">
+        <div class="header_left c-3">
+            <img th:src="@{/assets/img/logo/logo.webp}" alt="" class="header_left_logo">
+        </div>
+        <div class="header_mid c-6">
+            <div class="header_mid_small-navigation">
+                <ul class="header_mid_small-navigation_list">
+                    <li class="header_mid_small-navigation_item"><a href="#" class="header_mid_small-navigation_link">Xu
+                            hướng tìm kiếm</a> </li>
+                    <li class="header_mid_small-navigation_item"><a href="#"
+                            class="header_mid_small-navigation_link">Converse</a></li>
+                    <li class="header_mid_small-navigation_item"><a href="#"
+                            class="header_mid_small-navigation_link">Giày da</a></li>
+                    <li class="header_mid_small-navigation_item"><a href="#"
+                            class="header_mid_small-navigation_link">Giày thời trang nam</a></li>
+                </ul>
+            </div>
+            <div class="header_mid_search">
+                <input type="text" class="header_mid_search_input" placeholder="Tìm kiếm">
+                <button class="header_mid_search_btn">Tìm kiếm</button>
+            </div>
+        </div>
+        <div class="header_right c-3">
+            <div class="header_right_user">
+                <div class="header_right_user_icon header_right_icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="header_right_user_link header_right_link">
+                    <span><a href="/login">Đăng nhập</a></span> / <span><a href="/signup">Đăng ký</a></span>
+                </div>
+            </div>
+            <div class="header_right_cart">
+                <div class="header_right_cart_icon header_right_icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="header_right_cart_link header_right_link">
+                    <span><a href="#">Giỏ hàng</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="header_nav">
+        <ul class="header_nav_list grid">
+            <li class="header_nav_item">
+                <a href="/home" class="header_nav_link">
+                    <i style="color: white;" class="fa-solid fa-house"></i>
+                    Trang chủ
+                </a>
+            </li>
+            <li class="header_nav_item"><a href="/about" class="header_nav_link">Về chúng tôi</a></li>
+            <li class="header_nav_item"><a href="#" class="header_nav_link">Sản phẩm</a></li>
+            <li class="header_nav_item"><a href="#" class="header_nav_link">Tin tức</a></li>
+            <li class="header_nav_item"><a href="#" class="header_nav_link">Liên hệ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="menu category" th:fragment="category">
+    <h2 class="menu_title">
+        <i id="product-nav-icon" class="fa-solid fa-bars"></i>
+        Danh mục sản phẩm
+    </h2>
+    <ul class="menu_list category_list">
+        <li class="menu_item category_item"><a href="#" class="menu_link category_link">Bộ sưu tập mới</a></li>
+        <li class="menu_item category_item"><a href="#" class="menu_link category_link">Giày thời trang nam</a></li>
+        <li class="menu_item category_item"><a href="#" class="menu_link category_link">Giày thời trang nữ</a></li>
+        <li class="menu_item category_item"><a href="#" class="menu_link category_link">Giày mùa hè</a></li>
+        <li class="menu_item category_item"><a href="#" class="menu_link category_link">Giày công sở</a></li>
+        <li class="menu_item category_item"><a href="#" class="menu_link category_link">Giày thể thao</a></li>
+    </ul>
+</div>
+
+<div class="menu online-support" th:fragment="online-support">
+    <h2 class="menu_title">
+        Hỗ trợ trực tuyến
+    </h2>
+    <ul class="menu_list online-support_list">
+        <li class="menu_item online-support_item">
+            <div class="online-support_item_wrap">
+                <img class="online-support_item_img"
+                    src="//bizweb.dktcdn.net/100/091/132/themes/877468/assets/item_2_image.png?1663744425866" alt="">
+                <div class="online-support_item_info">
+                    <h2 class="online-support_item_info_advise">Tư vấn bán hàng 1</h2>
+                    <p>Mrs.Dung: <b>(04) 3786 8904</b></p>
+                </div>
+            </div>
+        </li>
+        <li class="menu_item online-support_item">
+            <div class="online-support_item_wrap">
+                <img class="online-support_item_img"
+                    src="//bizweb.dktcdn.net/100/091/132/themes/877468/assets/item_2_image.png?1663744425866" alt="">
+                <div class="online-support_item_info">
+                    <h2 class="online-support_item_info_advise">Tư vấn bán hàng 2</h2>
+                    <p>Mrs.Tuan: <b>(04) 3786 8904</b></p>
+                </div>
+            </div>
+        </li>
+        <li class="menu_item online-support_item">
+            <div class="online-support_item_wrap">
+                <img class="online-support_item_img"
+                    src="//bizweb.dktcdn.net/100/091/132/themes/877468/assets/item_2_image.png?1663744425866" alt="">
+                <div class="online-support_item_info">
+                    <h2 class="online-support_item_info_advise">Email liên hệ</h2>
+                    <p><b>hcmuafedu@gmail.com</b></p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<footer th:fragment="footer">
+    <div class="grid">
+        <div class="row top_footer">
+            <div class="c-4 m-12">
+                <h4 class="footer_title">
+                    <span>Thông tin công ty</span>
+                </h4>
+                <ul class="footer_list">
+                    <li class="footer_item"><a href=""> Trang chủ</a> </li>
+                    <li class="footer_item"><a href=""> Về chúng tôi</a></li>
+                    <li class="footer_item"><a href="">Sản phẩm</a></li>
+                    <li class="footer_item"><a href=""> Tin tức</a></li>
+                    <li class="footer_item"><a href=""> Liên hệ</a></li>
+                </ul>
+            </div>
+
+            <div class="c-4 m-12">
+                <h4 class="footer_title">
+                    <span>Điều khoản</span>
+                </h4>
+                <ul class="footer_list">
+                    <li class="footer_item"><a href=""> Trang chủ</a> </li>
+                    <li class="footer_item"><a href=""> Về chúng tôi</a></li>
+                    <li class="footer_item"><a href="">Sản phẩm</a></li>
+                    <li class="footer_item"><a href=""> Tin tức</a></li>
+                    <li class="footer_item"><a href=""> Liên hệ</a></li>
+                </ul>
+            </div>
+
+            <div class="c-4 m-12">
+                <h4 class="footer_title">
+                    <span>Hướng dẫn</span>
+                </h4>
+                <ul class="footer_list">
+                    <li class="footer_item"><a href=""> Trang chủ</a> </li>
+                    <li class="footer_item"><a href=""> Về chúng tôi</a></li>
+                    <li class="footer_item"><a href="">Sản phẩm</a></li>
+                    <li class="footer_item"><a href=""> Tin tức</a></li>
+                    <li class="footer_item"><a href=""> Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="new"></div>
+        </div>
+
+        <div class="row mid_footer">
+            <div class="c-5 m-12">
+                <h4 class="footer_title">
+                    <span>Hỗ trợ thanh toán</span>
+                </h4>
+                <ul class="footer_mid_list">
+                    <li class="footer_mid_item"> <img
+                            src="https://bizweb.dktcdn.net/thumb/small/100/091/132/themes/877468/assets/payment_1_image.png?1663744425866"
+                            alt=""></li>
+                    <li class="footer_mid_item"> <img
+                            src="https://bizweb.dktcdn.net/thumb/small/100/091/132/themes/877468/assets/payment_2_image.png?1663744425866"
+                            alt=""></li>
+                    <li class="footer_mid_item"><img
+                            src="https://bizweb.dktcdn.net/thumb/small/100/091/132/themes/877468/assets/payment_3_image.png?1663744425866"
+                            alt=""></li>
+                    <li class="footer_mid_item"><img
+                            src="https://bizweb.dktcdn.net/thumb/small/100/091/132/themes/877468/assets/payment_4_image.png?1663744425866"
+                            alt=""></li>
+                </ul>
+            </div>
+
+            <div class="c-5 m-12">
+
+                <h4><span>giải đáp thắc mắc</span></h4>
+                <div class="call">
+                    <div class="call_img">
+                        <img src="https://bizweb.dktcdn.net/thumb/icon/100/091/132/themes/877468/assets/customer_care_image.png?1663744425866"
+                            alt="">
+                    </div>
+                    <ul class="call_info">
+                        <li>
+                            <p>Tư vấn tại</p>
+                            <a href="tel: 1900 6750">1900 6750</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bot">
+        <div class="bot_footer">
+            <p>Bản quyền thuộc về team @</p>
+        </div>
+    </div>
+</footer>

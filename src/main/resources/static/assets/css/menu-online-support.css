@@ -1,0 +1,26 @@
+.online-support {
+    margin-top: 48px;
+}
+
+.online-support_item_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.online-support_item {
+    padding: 16px 0;
+}
+
+.online-support_item_img {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.online-support_item_info_advise {
+    font-size: 16px;
+}
+
+.online-support_item_info {
+    margin-left: 12px;
+}

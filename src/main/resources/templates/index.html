@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/fragments :: include"></head>
+<head>
+    <title>Trang chủ</title>
+</head>
+<body>
+    <header th:replace="layout/fragments :: header"></header>
+
+    <div class="main grid">
+        <div class="slider">
+            <div class="slider_img_wrap">
+                <img th:src="@{/assets/img/slider/slider1.jpg}" alt="" class="slider_img">
+                <img th:src="@{/assets/img/slider/slider2.jpg}" alt="" class="slider_img">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container_left c-3">
+                <div class="category" th:replace="layout/fragments :: category"></div>
+                <div class="online-support" th:replace="layout/fragments :: online-support"></div>
+            </div>
+            <div class="container_right"></div>
+        </div>
+    </div>
+
+    <footer th:replace="layout/fragments :: footer"></footer>
+
+    <script th:src="@{/js/slider.js}"></script>
+
+</body>
+</html>

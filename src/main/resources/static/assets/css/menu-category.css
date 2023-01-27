@@ -1,0 +1,18 @@
+.category {
+    margin-top: 48px;
+}
+
+.category_item {
+    background-color: var(--white-color);
+    padding: 16px 0;
+    border-bottom: var(--menu-border-color) thin dashed;
+    cursor: pointer;
+}
+
+.category_link {
+    transition: all .3s;
+}
+
+.category_item:hover a {
+    color: var(--menu-color);
+}
