@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head th:replace="layout/fragments :: include"></head>
+
 <head>
     <title>Đăng nhập</title>
 </head>
 
 <body>
     <header th:replace="layout/fragments :: header"></header>
-    <div class="grid dang_nhap">
-        <div class="dang_nhap_center">
-            <div class="dang_nhap_lefp">
-                <h1 class="dang_nhap_tai_khoan font">ĐĂNG NHẬP TÀI KHOẢN</h1>
+    <div class="grid login_container">
+        <div class="row">
+            <div class="login_container_left c-6">
+                <h2 class="login_container_left_title">ĐĂNG NHẬP TÀI KHOẢN</h2>
+                <form th:action="@{/perform_login}" class="login_container_left_login_form" method="POST">
+                    <div class="group email_group">
+                        <span>Email:</span>
+                        <input type="email" class="email" name="email" placeholder="Email" required>
+                    </div>
 
-                <h4 class="email size">Email:</h4>
+                    <div class="group password_group">
+                        <span>Password:</span>
+                        <input type="password" class="password" name="password" placeholder="Password" required>
+                    </div>
 
-                <input class="input_font email-input" type="email" placeholder="Email" />
-
-                <h4 class="mat_khau size">Mật Khẩu</h4>
-
-                <input class="input_font password" type="password" placeholder="Mật Khẩu" />
-
-                <div class="line">
-                    <button class="button login-btn">
-                        <i class="fa-solid fa-lock-open"></i> ĐĂNG NHẬP
-                    </button>
-
-                    <a class="quen_mat_khau" href="">Quên mật khẩu?</a>
-                </div>
+                    <div class="group button_group">
+                        <button type="submit" class="login_btn g_btn">
+                            <i class="fa-solid fa-lock-open"></i>
+                            ĐĂNG NHẬP
+                        </button>
+                        <button class="forget_password_btn">Quên mật khẩu</button>
+                    </div>
+                </form>
             </div>
-
-            <div class="dang_nhap_right">
-                <h1 class="tao_tai_khoan_moi font">TẠO TÀI KHOẢN MỚI</h1>
-
-                <p class="chu_thich">
-                    Đăng ký tài khoản ngay để có thể mua hàng nhanh chóng và dễ dàng hơn
-                    ! Ngoài ra <br class="down" />
-                    còn có rất nhiều chính sách và ưu đãi cho các thành viên
-                </p>
-
-                <a href="/signup">
-                    <button class="button">
-                        <i class="fa-solid fa-user"></i>Tạo tài khoản
-                    </button>
-                </a>
+            <div class="login_container_right c-6">
+                <h2 class="login_container_right_title">TẠO TÀI KHOẢN MỚI</h2>
+                <p>Đăng ký tài khoản ngay để có thể mua hàng nhanh chóng và dễ dàng hơn ! Ngoài ra còn có rất nhiều
+                    chính
+                    sách và ưu đãi cho các thành viên</p>
+                <button class="create_account_btn g_btn">
+                    <i class="fa-solid fa-user"></i>
+                    Tạo tài khoản
+                </button>
             </div>
         </div>
     </div>
