@@ -8,6 +8,7 @@
     --small-text-color: #707070;
     --nav-border-color: #E78181;
     --menu-border-color: #EBEBEB;
+    --text-price-color: #DC3333;
 }
 
 * {
@@ -30,3 +31,16 @@ body {
     background-color: var(--body-color);
 }
 
+.container {
+    display: flex;
+    margin-top: 48px;
+    justify-content: space-between;
+}
+
+/* .container_left {
+
+}
+
+.container_right {
+
+} */

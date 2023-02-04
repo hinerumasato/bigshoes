@@ -1,4 +1,4 @@
-package com.bigshoes.bigshoes;
+package com.bigshoes.bigshoes.Configs;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -21,7 +21,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/", "/home", "/about", "/assets/**", "/js/**").permitAll()
+                .antMatchers("/", "/home", "/about", "/product/**", "/assets/**", "/js/**").permitAll()
                 .anyRequest().authenticated()
                 .and().formLogin().loginPage("/login").permitAll()
                 .defaultSuccessUrl("/home")

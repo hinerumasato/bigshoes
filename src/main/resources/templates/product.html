@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+                xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head th:replace="layout/fragments :: include"></head>
+<head>
+    <title>Sản phẩm</title>
+</head>
+<body>
+    <header th:replace="layout/fragments :: header"></header>
+
+    <div class="main grid">
+        <div class="slider">
+            <div class="slider_img_wrap">
+                <img th:src="@{/assets/img/slider/slider1.jpg}" alt="" class="slider_img">
+                <img th:src="@{/assets/img/slider/slider2.jpg}" alt="" class="slider_img">
+            </div>
+        </div>
+
+        <div class="product_container container">
+            <div class="product_container_left">
+                <div class="category" th:replace="layout/fragments :: category"></div>
+                <div class="online-support" th:replace="layout/fragments :: online-support"></div>
+            </div>
+            <div class="product_container_right">
+                <div class="product_container_right_product_list">
+                    <div class="product_container_right_product_list_item">
+                        <div class="product_container_right_product_list_item_up">
+                            <img th:src="@{/assets/img/products/product-1.webp}" alt="" class="product_container_right_product_list_item_up_img">
+                        </div>
+                        <div class="product_container_right_product_list_item_down">
+                            <div class="product_container_right_product_list_item_down_name">
+                                Copy of Giày Converse Star Dainty
+                            </div>
+                            <div class="product_container_right_product_list_item_down_price">
+                                500.000₫
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_container_right_product_list_item"></div>
+                    <div class="product_container_right_product_list_item"></div>
+                    <div class="product_container_right_product_list_item"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer th:replace="layout/fragments :: footer"></footer>
+</body>
+</html>
