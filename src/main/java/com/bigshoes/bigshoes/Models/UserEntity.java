@@ -1,21 +1,15 @@
 package com.bigshoes.bigshoes.Models;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "user")
 public class UserEntity {
-    @Id
     private int id;
-
     private String email;
     private String password;
     private String name;
     private String phone;
     private boolean enable;
     private String role;
+
+    public UserEntity(){};
     
     public UserEntity(int id, String email, String password, String name, String phone, boolean enable, String role) {
         this.id = id;
