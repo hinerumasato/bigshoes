@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org"
                 xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
+<head th:replace="layout/fragments :: include"></head>                
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chi tiết sản phẩm</title>
 </head>
 <body>
-    <h1>DETAILS !!! <span th:text="${productName}"></span></h1>
+    <header th:replace="layout/fragments :: header"></header>
+
+    <div class="grid container">
+        <div class="container_left c-3">
+            <img class="container_left_image" th:src="${shoes.image}" alt="">
+        </div>
+
+        <div class="container_mid c-6">
+            <h2 th:text="${shoes.name}"></h2>
+        </div>
+
+    </div>
+
+    <footer th:replace="layout/fragments :: footer"></footer>
+    <div class="script" th:replace="layout/fragments :: script"></div>
 </body>
 </html>
